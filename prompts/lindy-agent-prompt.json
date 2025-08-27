@@ -1,0 +1,26 @@
+{
+  "name": "Sticky-to-Ship Agent",
+  "goal": "Given a brief idea, scaffold a project using the Sticky-to-Ship workflow and produce actionable outputs.",
+  "inputs": {
+    "idea_title": "string",
+    "idea_one_liner": "string",
+    "context": "optional string"
+  },
+  "outputs": [
+    "refined one-pager",
+    "10-prompt pack tailored to the idea",
+    "lean business plan summary",
+    "website sitemap + homepage copy",
+    "repo setup instructions and commands"
+  ],
+  "steps": [
+    "Create/refine One-Pager using the template.",
+    "Generate 10 tailored prompts (00–09).",
+    "Draft Business Plan (executive summary, ICP, features, pricing, GTM, risks).",
+    "Propose website flow (sitemap, homepage copy, CTA).",
+    "Provide exact shell/PowerShell commands to init Git repo and optional Next.js app.",
+    "List environment variables and Vercel deployment steps.",
+    "Return everything as clean markdown sections."
+  ],
+  "style": "Explain like I am 10 years old. Short sentences. Clear steps. No jargon."
+}

@@ -1,2 +1,38 @@
-# sticky-to-ship-workflow
-Starter pack for the Sticky to Ship workflow, including docs, prompts, and scripts.
+# Sticky-to-Ship Workflow
+
+This repository provides a starter pack for the Sticky to Ship product development workflow. It includes docs, prompt templates, scripts, and configuration files to help you go from raw ideas to shipped products.
+
+## Structure
+
+- `docs/` – planning documents and templates (master playbook, one‑pager, changelog).
+- `prompts/` – AI prompt packs and agent definitions (e.g. Lindy agent).
+- `scripts/` – setup scripts for bootstrapping a project (`.sh` and `.ps1`).
+- `.github/ISSUE_TEMPLATE/` – GitHub issue templates (feature request).
+- `.env.example` – Example environment variables you should copy to `.env.local`.
+- `.gitignore` – Files and directories that should not be committed.
+
+## Getting Started
+
+1. Clone this repository and navigate into the folder.
+2. Copy `.env.example` to `.env.local` and fill in your environment variables.
+3. Use the setup scripts to initialize a Next.js project:
+
+   ```bash
+   bash scripts/setup_repo.sh my-project
+   ```
+
+   On Windows use PowerShell:
+
+   ```powershell
+   .\scripts\setup_repo.ps1 -ProjectName "my-project"
+   ```
+
+4. Follow the master playbook in `docs/master-playbook.md` to run the Sticky‑to‑Ship workflow for your idea.
+
+## Resources
+
+- `docs/one-pager-template.md` – Template to capture and expand new ideas.
+- `prompts/lindy-agent-prompt.json` – Lindy agent configuration for automating the workflow.
+- `docs/dev/changelog.md` – Keep a chronological log of changes.
+
+Feel free to fork or clone this repository and adapt the workflow for your own projects.
